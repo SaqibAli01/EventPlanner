@@ -1,0 +1,48 @@
+.container-fluid a,.container-fluid button, .nav-item{
+color: white;
+}
+.container-fluid a:hover{
+color: yellow !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #1d96b2 !important;
+    /* background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important; */
+}
+
+a {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+
+ 
+  
+  
